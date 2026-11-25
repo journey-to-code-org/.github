@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "source": {
+    "identity": "journey-to-code-org/.github@e7f85ae7d3b974b02e048870c4eb83090cb1f744",
+    "account": "journey-to-code-org",
+    "configurationDigest": null,
+    "evidenceDigest": null
+  },
+  "referenceDate": "2026-11-25",
+  "artifact": {
+    "format": "svg",
+    "filename": "tech-stack-map.svg",
+    "digest": "sha256:158c620a43512e20197e59195b9b91cc15b3a489f7f52afb22b78bc44246f461",
+    "bytes": 40922
+  },
+  "destination": {
+    "identity": "journey-to-code-org/.github@output"
+  },
+  "revision": 1,
+  "generation": "success",
+  "diagnostics": []
+}
