@@ -41,8 +41,10 @@ const config = {
   sortBy: 'updated',
   repoQuery: '',
   exportProfile: 'custom',
-  // Only arrangements that fill the picture well with ~25 projects.
-  arrangement: ['rings', 'galaxy', 'solar-system', 'orbital'][Math.floor(random() * 4)],
+  // Always on rings, with the stars lined up on them. Only the look and motion vary.
+  arrangement: 'rings',
+  snapToRings: true,
+  identityRing: true,
   layout: 'atlas',
   history: { ...recipe.history, mode: 'current' },
   activityEffect: 'off',
