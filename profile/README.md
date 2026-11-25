@@ -106,7 +106,7 @@ The parlor is assembled from reusable pieces, and each one works on its own:
 
 ## Tech stack constellation
 
-The languages, frameworks and tools declared across every repository in this organization, with lines joining the ones used together. It's redrawn every day with [Constellation](https://github.com/mnichols08/constellation), and **its look and motion change daily**: new colors, backgrounds and effects, and different parts of the sky moving.
+The languages, frameworks and tools declared across every repository in this organization, with lines joining the ones used together. It's redrawn every day with [Constellation](https://github.com/mnichols08/constellation), and **its look and motion change daily**: the sky, glow and effects shift, and different parts of it move, always in the blog's black and yellow.
 
 <p align="center">
   <a href="https://mnichols08.github.io/constellation/?organization=journey-to-code-org">

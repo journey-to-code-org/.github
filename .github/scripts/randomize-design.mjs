@@ -31,16 +31,20 @@ const seed = day.replaceAll('-', '') + '-' + Math.floor(random() * 36 ** 6).toSt
 const code = `v5:m${mask.toString(16).padStart(3, '0')}-y${year}-f${year - 8}-${seed}`;
 const recipe = randomizeV5(code);
 
-// Only the look and the motion. Nodes, groups, colors by group, labels and layout stay as they are.
-// The map always sits on a dark sky, so its light labels stay readable.
-const dark = recipe.visualStyle.dark;
+// The blog's look is fixed: near-black with yellow, the same palette as the profile
+// constellation. Only the details of the sky and the motion change day to day.
+const blog = { background: '#111111', foreground: '#f3f3f4', accent: '#e3de13', line: '#555a38', star: '#e3de13' };
+const pick = values => values[Math.floor(random() * values.length)];
 const design = {
-  visualTheme: recipe.visualTheme,
+  visualTheme: 'deep-space', // opaque, so the light labels read on any GitHub theme
   theme: 'midnight',
-  visualStyle: { ...recipe.visualStyle, light: dark, dark, labels: true, labelSize: 11 },
-  starfield: recipe.starfield,
-  nodeShape: recipe.nodeShape,
-  effect: recipe.effect,
+  visualStyle: {
+    light: blog, dark: blog, labels: true, labelSize: 11,
+    lineWidth: 1, lineOpacity: pick([0.5, 0.65, 0.8]), secondaryOpacity: 0.26, bridgeOpacity: 0.3,
+    glow: pick([2, 3, 3.5, 4.5]), dustOpacity: pick([0.6, 0.8, 0.95]),
+  },
+  starfield: { mode: pick(['milky-way', 'milky-way', 'space', 'classic']), density: pick([70, 90, 100]), brightness: 1, depth: 0.95, twinkle: recipe.starfield.twinkle, seed: seed },
+  effect: pick(['none', 'none', 'grid', 'scanlines']),
   animate: recipe.animate,
   starlightAnimate: recipe.starlightAnimate,
   ringAnimation: recipe.ringAnimation,
@@ -69,5 +73,5 @@ for (const path of ['src/tech-stack/scene.mjs', 'packages/core/src/tech-stack/sc
 }
 
 console.log(`design ${code}`);
-console.log(`theme=${design.visualTheme} shape=${design.nodeShape} starfield=${design.starfield.mode} effect=${design.effect}`);
+console.log(`starfield=${design.starfield.mode} effect=${design.effect} glow=${design.visualStyle.glow}`);
 console.log(`moving: ${motionParts.filter((_, i) => mask & (1 << i)).map(([k]) => k).join(', ')}`);
