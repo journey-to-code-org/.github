@@ -28,8 +28,8 @@
     "bridgeOpacity": 0.4,
     "glow": 5,
     "dustOpacity": 0.25,
-    "labelSize": 10,
-    "labels": false
+    "labelSize": 11,
+    "labels": true
   },
   "arrangement": "rings",
   "layout": "atlas",
@@ -41,7 +41,7 @@
   "updatedWithin": 0,
   "sortBy": "updated",
   "repoQuery": "",
-  "nodeMode": "repositories",
+  "nodeMode": "languages",
   "nodeSize": "uniform",
   "nodeColorMode": "custom",
   "nodeGlowMode": "activity",
