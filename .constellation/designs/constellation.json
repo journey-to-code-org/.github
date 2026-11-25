@@ -1,0 +1,203 @@
+{
+  "version": 7,
+  "account": "journey-to-code-org",
+  "designCode": "v5:m0f9-y2026-f2018-20261125-qkoc0y",
+  "seedMode": "custom",
+  "seed": "v5:visual-y2026-f2018-20261125-qkoc0y",
+  "visualTheme": "github-dark",
+  "theme": "midnight",
+  "colors": {},
+  "visualStyle": {
+    "light": {
+      "background": "#faf1f0",
+      "foreground": "#38361c",
+      "accent": "#6d6e7d",
+      "line": "#967f64",
+      "star": "#582122"
+    },
+    "dark": {
+      "background": "#1c0617",
+      "foreground": "#bbf1eb",
+      "accent": "#987987",
+      "line": "#3e7759",
+      "star": "#bbe1a0"
+    },
+    "lineWidth": 2,
+    "lineOpacity": 0.75,
+    "secondaryOpacity": 0.05,
+    "bridgeOpacity": 0.4,
+    "glow": 5,
+    "dustOpacity": 0.25,
+    "labelSize": 10,
+    "labels": false
+  },
+  "arrangement": "orbital",
+  "layout": "atlas",
+  "exportProfile": "custom",
+  "maxRepos": 25,
+  "includeForks": false,
+  "includeArchived": false,
+  "minStars": 0,
+  "updatedWithin": 0,
+  "sortBy": "updated",
+  "repoQuery": "",
+  "nodeMode": "repositories",
+  "nodeSize": "uniform",
+  "nodeColorMode": "custom",
+  "nodeGlowMode": "activity",
+  "nodeShape": "circle",
+  "connectionWeight": "overlap",
+  "connectionBasis": "languages",
+  "connectionDensity": "balanced",
+  "bridges": false,
+  "colorConnections": false,
+  "majorMetric": "stars",
+  "effect": "coordinates",
+  "legend": false,
+  "identityRing": false,
+  "snapToRings": false,
+  "showOther": false,
+  "animate": true,
+  "starlightAnimate": true,
+  "activityAnimate": false,
+  "ringRotations": [
+    32,
+    195,
+    297,
+    256
+  ],
+  "ringAnimation": {
+    "enabled": true,
+    "linked": false,
+    "speeds": [
+      0,
+      1.75,
+      1.75,
+      1.75
+    ],
+    "directions": [
+      "counterclockwise",
+      "counterclockwise",
+      "counterclockwise",
+      "counterclockwise"
+    ],
+    "modes": [
+      "sway",
+      "sway",
+      "sway",
+      "sway"
+    ],
+    "amplitudes": [
+      35,
+      35,
+      35,
+      35
+    ],
+    "easing": [
+      "smooth",
+      "smooth",
+      "smooth",
+      "smooth"
+    ]
+  },
+  "floatingAnimation": {
+    "enabled": true,
+    "mode": "orbit",
+    "amplitude": 9,
+    "duration": 18
+  },
+  "perspective": {
+    "enabled": false,
+    "animate": true,
+    "horizontal": 50,
+    "vertical": 39,
+    "zoom": 83,
+    "range": 23,
+    "duration": 38
+  },
+  "starfield": {
+    "mode": "space",
+    "density": 39,
+    "brightness": 0.25,
+    "depth": 0.95,
+    "twinkle": false,
+    "seed": "-20261125-qkoc0y-sky"
+  },
+  "activityEffect": "off",
+  "activityWindow": "1d",
+  "activityDetail": "simple",
+  "activityConnections": true,
+  "codingRhythm": false,
+  "codingRhythmStyle": "halo",
+  "codingRhythmWindow": "7d",
+  "codingRhythmTimezone": "UTC",
+  "codingRhythmDays": "off",
+  "codingRhythmAnimate": false,
+  "codingRhythmPeakLabel": true,
+  "codingRhythmLabels": "cardinal",
+  "codingRhythmCelestialMarkers": true,
+  "codingRhythmProjectHints": true,
+  "history": {
+    "mode": "current",
+    "year": null,
+    "maxHistoricalFrames": 4,
+    "timeLapse": {
+      "enabled": false,
+      "mode": "grow",
+      "duration": 29,
+      "loop": true
+    }
+  },
+  "contributionOrbit": {
+    "enabled": false,
+    "period": "52w",
+    "granularity": "week",
+    "style": "segments",
+    "showCurrent": true,
+    "animate": false
+  },
+  "languageEvolution": {
+    "enabled": false,
+    "style": "rings",
+    "buckets": "automatic"
+  },
+  "stellarAges": {
+    "enabled": true,
+    "mode": "color",
+    "showArchivedRemnants": false,
+    "thresholds": {
+      "newborn": 60,
+      "active": 7,
+      "mature": 730,
+      "quiet": 90,
+      "dormant": 365
+    }
+  },
+  "foreignGalaxies": {
+    "enabled": false,
+    "limit": 11,
+    "minimumContribution": "code",
+    "layout": "outer"
+  },
+  "nodeColors": {},
+  "starPositions": {},
+  "labelPositions": {},
+  "labelOffsets": {},
+  "hiddenNodes": [],
+  "hiddenLabels": [],
+  "selection": {},
+  "css": "",
+  "customCSS": "",
+  "accountType": "organization",
+  "organizationScope": "active",
+  "organizationView": "projects",
+  "organization": {
+    "contributors": {
+      "enabled": false
+    },
+    "grouping": {
+      "mode": "auto",
+      "pattern": ""
+    }
+  }
+}

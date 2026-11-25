@@ -1,22 +1,22 @@
 {
   "version": 1,
   "source": {
-    "identity": "journey-to-code-org/.github@e7f85ae7d3b974b02e048870c4eb83090cb1f744",
+    "identity": "journey-to-code-org/.github@c6327b5cdb38a073ffb75873dbb28fb100c473ba",
     "account": "journey-to-code-org",
-    "configurationDigest": null,
-    "evidenceDigest": null
+    "configurationDigest": "sha256:88406b75b768b40969c189296bc57522a857882401620a56e90a4d002cf3f72b",
+    "evidenceDigest": "sha256:0a0baf13395662117682194582856c4447c6e6dce0af1281129ae99b9b200ef1"
   },
   "referenceDate": "2026-11-25",
   "artifact": {
     "format": "svg",
-    "filename": "tech-stack.svg",
-    "digest": "sha256:532cad2e8a7779311fc7510019f521ee70ebc173330db845140a266f11766263",
-    "bytes": 11920
+    "filename": "constellation.svg",
+    "digest": "sha256:4abf2bba78919becfbfcd901664371f103c789509811f3f59dc9d74b9924d238",
+    "bytes": 716940
   },
   "destination": {
     "identity": "journey-to-code-org/.github@output"
   },
-  "revision": 2,
+  "revision": 3,
   "generation": "success",
   "diagnostics": []
 }
