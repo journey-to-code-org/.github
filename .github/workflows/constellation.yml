@@ -1,0 +1,43 @@
+name: Daily project constellation
+
+on:
+  schedule:
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Draw the design for this date (YYYY-MM-DD). Leave empty for today.'
+        required: false
+
+# Publishes to the `output` branch; it never touches main.
+permissions:
+  contents: write
+
+# Shares a group with the tech stack workflow so the two never push to `output` at once.
+concurrency:
+  group: constellation-output
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Constellation's own source, for its design randomizer.
+      - uses: actions/checkout@v4
+        with:
+          repository: mnichols08/constellation
+          ref: v5
+          path: _constellation
+
+      # A new look and new motion each day, picked from the date.
+      - name: Pick today's design
+        run: node .github/scripts/randomize-design.mjs _constellation constellation.config.json ${{ inputs.date }}
+
+      - uses: mnichols08/constellation@v5
+        with:
+          username: journey-to-code-org
+          config: constellation.config.json
+          output: constellation.svg
+          publish: 'true'

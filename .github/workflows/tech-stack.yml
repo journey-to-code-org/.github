@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: tech-stack-output
+  group: constellation-output
   cancel-in-progress: false
 
 jobs:

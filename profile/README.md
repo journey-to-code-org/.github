@@ -104,9 +104,19 @@ The parlor is assembled from reusable pieces, and each one works on its own:
 
 ---
 
-## Tech stack constellation
+## Constellation
 
-What the repositories in this organization declare, and which technologies show up together. It's drawn from their `package.json` and similar manifests, plus the languages GitHub detects, and redrawn every day with [Constellation](https://github.com/mnichols08/constellation).
+Every project in this organization as a star map. It's redrawn every day with [Constellation](https://github.com/mnichols08/constellation), and **its look and its motion change daily**: new colors, a new layout, and different parts of the sky moving.
+
+<p align="center">
+  <a href="https://mnichols08.github.io/constellation/?organization=journey-to-code-org">
+    <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/constellation.svg" alt="Today's constellation of the Journey to Code organization's projects. Its design changes every day.">
+  </a>
+</p>
+
+### Tech stack
+
+What the repositories in this organization declare, and which technologies show up together. It's drawn from their `package.json` and similar manifests, plus the languages GitHub detects, and redrawn every day.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/tech-stack-map.svg" alt="Tech stack constellation of the Journey to Code organization: the technologies its repositories declare, joined when they are used together.">
