@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": {
-    "identity": "journey-to-code-org/.github@38545e88fa20f87de7ae935cf4ca322fcf982b40",
+    "identity": "journey-to-code-org/.github@a4ee7b834231fa5e9b7d31dd826b120bf96162f4",
     "account": "journey-to-code-org",
     "configurationDigest": null,
     "evidenceDigest": null
@@ -10,13 +10,13 @@
   "artifact": {
     "format": "svg",
     "filename": "tech-stack.svg",
-    "digest": "sha256:338183345e46db1c9d319d82b09c5be1e9cc4f22d58d07308cfc4c939777a767",
-    "bytes": 280381
+    "digest": "sha256:5836eecadc7f4134c1813be2edcd950f037bbde272e9aa6c6e25ebfd59773bdf",
+    "bytes": 343567
   },
   "destination": {
     "identity": "journey-to-code-org/.github@output"
   },
-  "revision": 6,
+  "revision": 7,
   "generation": "success",
   "diagnostics": []
 }
