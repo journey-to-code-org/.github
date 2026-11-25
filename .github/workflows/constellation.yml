@@ -2,7 +2,7 @@ name: Daily tech stack constellation
 
 on:
   schedule:
-    - cron: '30 0 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       date:
@@ -21,23 +21,27 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    env:
+      TECH_STACK_DESIGN: ${{ github.workspace }}/tech-stack-design.json
     steps:
       - uses: actions/checkout@v4
 
-      # Constellation's own source, for its design randomizer.
+      # Constellation's own source, pinned so the patch below always fits.
       - uses: actions/checkout@v4
         with:
           repository: mnichols08/constellation
-          ref: v5
+          ref: v5.5.0
           path: _constellation
 
-      # A new look and new motion each day, picked from the date.
+      # The tech stack map ignores design settings, so pick a design from the date
+      # (new look, new motion) and have the map read it. What the map shows never changes.
       - name: Pick today's design
-        run: node .github/scripts/randomize-design.mjs _constellation constellation.config.json ${{ inputs.date }}
+        run: node .github/scripts/randomize-design.mjs _constellation "$TECH_STACK_DESIGN" "${{ inputs.date }}"
 
-      - uses: mnichols08/constellation@v5
+      - uses: ./_constellation
         with:
           username: journey-to-code-org
-          config: constellation.config.json
-          output: constellation.svg
+          tech-stack: 'true'
+          tech-stack-style: map
+          output: tech-stack.svg
           publish: 'true'

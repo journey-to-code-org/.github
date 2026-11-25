@@ -106,13 +106,15 @@ The parlor is assembled from reusable pieces, and each one works on its own:
 
 ## Tech stack constellation
 
-The languages used across every repository in this organization, drawn as stars on rings. It's redrawn every day with [Constellation](https://github.com/mnichols08/constellation), and **its look and motion change daily**: new colors and shapes, and different parts of the sky moving. The languages and the rings stay.
+The languages, frameworks and tools declared across every repository in this organization, with lines joining the ones used together. It's redrawn every day with [Constellation](https://github.com/mnichols08/constellation), and **its look and motion change daily**: new colors, backgrounds and effects, and different parts of the sky moving.
 
 <p align="center">
   <a href="https://mnichols08.github.io/constellation/?organization=journey-to-code-org">
-    <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/constellation.svg" alt="Today's tech stack constellation of the Journey to Code organization: its languages as stars on rings. The design changes every day.">
+    <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/tech-stack.svg" alt="Today's tech stack constellation of the Journey to Code organization: the languages, frameworks and tools its repositories declare, joined when they are used together. The design changes every day.">
   </a>
 </p>
+
+*A technology counts when a repository declares it, which doesn't prove how well it's used.*
 
 ---
 
