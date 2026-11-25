@@ -9,14 +9,14 @@
   "referenceDate": "2026-11-25",
   "artifact": {
     "format": "svg",
-    "filename": "tech-stack-map.svg",
-    "digest": "sha256:158c620a43512e20197e59195b9b91cc15b3a489f7f52afb22b78bc44246f461",
-    "bytes": 40922
+    "filename": "tech-stack.svg",
+    "digest": "sha256:532cad2e8a7779311fc7510019f521ee70ebc173330db845140a266f11766263",
+    "bytes": 11920
   },
   "destination": {
     "identity": "journey-to-code-org/.github@output"
   },
-  "revision": 1,
+  "revision": 2,
   "generation": "success",
   "diagnostics": []
 }
