@@ -29,6 +29,32 @@ cargo install --git https://github.com/journey-to-code-org/open.blog openblog-cl
 
 ---
 
+## Writing: Journey to Code
+
+I write at **[journeytocode.io](https://journeytocode.io/)** about what I'm building and learning: JavaScript, Web Components, Git, Rust and WebAssembly, and application architecture. Several of the projects below started as a series there.
+
+### Featured series
+
+- **[Commit to Success: Mastering Git](https://journeytocode.io/series/learn-git-from-basics-to-advanced)**: moving beyond basic commands to master version control, branches, merging, and real-world collaboration.
+- **[Journey to Web Components](https://journeytocode.io/series/web-components-fundamentals-to-advanced)**: reusable UI architecture without heavy frameworks, using Custom Elements, Shadow DOM, and native browser APIs.
+- **[Mastering the Fetch API & Browser Storage](https://journeytocode.io/series/mastering-fetch-api-browser-storage)**: network requests, client-side persistence (IndexedDB, Cache API), and resilient offline-first design.
+- **[Mastering the Web Audio API](https://journeytocode.io/series/complete-web-audio-api-tutorial)**: creative coding, spatial audio, synthesis, and processing directly in the browser.
+- **[Coding Patterns Demystified](https://journeytocode.io/coding-patterns-demystified)**: a deep dive into the Model-View-Controller pattern with shipping code.
+
+### Recent articles
+
+<!-- BLOG-POST-LIST:START -->
+- [One Message Is Not a Conversation](https://journeytocode.io/one-message-is-not-a-conversation/) — Keep a Rust TCP client and server talking until quit, using loop, break, continue and the zero-byte read that means the...
+- [The Input That Never Got Submitted](https://journeytocode.io/a-custom-input-that-joins-the-form/) — Build a custom form field the browser actually submits, resets and blocks on bad input, using formAssociated and Element...
+- [A Server With Nobody to Talk To](https://journeytocode.io/a-server-with-nobody-to-talk-to/) — Build a Rust TCP server and client, send one welcome message across localhost and let Result and the question-mark opera...
+- [The File That Exists Twice](https://journeytocode.io/the-file-that-exists-twice/) — Our practicum team never fixed a merge conflict that kept coming back. The cause was one file with two names in Git. See...
+- [The Tutorial Is Not the Game.](https://journeytocode.io/the-tutorial-is-not-the-game/) — Turn a finished Rust tutorial into a welcoming open-source project, then take one small contribution from idea to pull r...
+<!-- BLOG-POST-LIST:END -->
+
+*This list updates itself from the [blog's feed](https://journeytocode.io/rss.xml) every few hours.*
+
+---
+
 ## The family game room: open.parlor and friends
 
 <a href="https://github.com/journey-to-code-org/open.parlor"><img src="https://raw.githubusercontent.com/journey-to-code-org/open.parlor/main/packages/web/public/og.jpg" alt="open.parlor: family card and board games. Playing cards, a checkers board and dice on green felt." width="100%"></a>
@@ -76,6 +102,27 @@ The parlor is assembled from reusable pieces, and each one works on its own:
 - [**rustbound-idle**](https://github.com/journey-to-code-org/rustbound-idle) is a community-built Rust and WebAssembly idle game from the [Rustbound series](https://journeytocode.io/series/rustbound-build-your-first-rust-app/).
 - [**one-world-many-players**](https://github.com/journey-to-code-org/one-world-many-players) is the companion server for [Rustbound II](https://journeytocode.io/series/one-world-many-players/). Build a multiplayer text world in Rust.
 - [**scam-mirror**](https://github.com/journey-to-code-org/scam-mirror) is a privacy-first cybersecurity simulator. You land inside one of five fictional scams, such as a fake job offer, credential phishing or a booby-trapped coding challenge. You get a supportive debrief on the pressure tactics used, and nothing leaves your browser. [Try it](http://careers.journeytocode.io/)
+
+---
+
+## Tech stack constellation
+
+What the repositories in this organization declare, and which technologies show up together. It's drawn from their `package.json` and similar manifests, plus the languages GitHub detects, and redrawn every day with [Constellation](https://github.com/mnichols08/constellation).
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/tech-stack-map.svg" alt="Tech stack constellation of the Journey to Code organization: the technologies its repositories declare, joined when they are used together.">
+</p>
+
+<details>
+<summary>The stack at a glance</summary>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/tech-stack.svg" alt="Journey to Code tech stack summary: current stacks, when each was active, and projects to start with.">
+</p>
+
+</details>
+
+*A technology counts when a repository declares it, which doesn't prove how well it's used.*
 
 ---
 

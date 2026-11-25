@@ -1,0 +1,40 @@
+name: Daily tech stack constellation
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+# Publishes the images to the `output` branch; it never touches main.
+permissions:
+  contents: write
+
+concurrency:
+  group: tech-stack-output
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The star map: which technologies the organization's repositories declare,
+      # and which are used together.
+      - uses: mnichols08/constellation@v5
+        with:
+          username: journey-to-code-org
+          tech-stack: 'true'
+          tech-stack-style: map
+          output: tech-stack-map.svg
+          publish: 'true'
+
+      # The at-a-glance card: current stacks, dates, and projects to start with.
+      - uses: mnichols08/constellation@v5
+        with:
+          username: journey-to-code-org
+          tech-stack: 'true'
+          tech-stack-style: full
+          tech-stack-featured: 'open.blog,open.parlor,open.relay'
+          output: tech-stack.svg
+          publish: 'true'
