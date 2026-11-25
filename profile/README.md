@@ -104,34 +104,15 @@ The parlor is assembled from reusable pieces, and each one works on its own:
 
 ---
 
-## Constellation
+## Tech stack constellation
 
-Every project in this organization as a star map. It's redrawn every day with [Constellation](https://github.com/mnichols08/constellation), and **its look and its motion change daily**: new colors, a new layout, and different parts of the sky moving.
+The languages used across every repository in this organization, drawn as stars on rings. It's redrawn every day with [Constellation](https://github.com/mnichols08/constellation), and **its look and motion change daily**: new colors and shapes, and different parts of the sky moving. The languages and the rings stay.
 
 <p align="center">
   <a href="https://mnichols08.github.io/constellation/?organization=journey-to-code-org">
-    <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/constellation.svg" alt="Today's constellation of the Journey to Code organization's projects. Its design changes every day.">
+    <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/constellation.svg" alt="Today's tech stack constellation of the Journey to Code organization: its languages as stars on rings. The design changes every day.">
   </a>
 </p>
-
-### Tech stack
-
-What the repositories in this organization declare, and which technologies show up together. It's drawn from their `package.json` and similar manifests, plus the languages GitHub detects, and redrawn every day.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/tech-stack-map.svg" alt="Tech stack constellation of the Journey to Code organization: the technologies its repositories declare, joined when they are used together.">
-</p>
-
-<details>
-<summary>The stack at a glance</summary>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/journey-to-code-org/.github/output/tech-stack.svg" alt="Journey to Code tech stack summary: current stacks, when each was active, and projects to start with.">
-</p>
-
-</details>
-
-*A technology counts when a repository declares it, which doesn't prove how well it's used.*
 
 ---
 

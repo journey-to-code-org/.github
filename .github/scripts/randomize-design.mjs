@@ -26,11 +26,11 @@ const code = `v5:m${mask.toString(16).padStart(3, '0')}-y${year}-f${year - 8}-${
 const recipe = randomizeV5(code);
 const config = {
   ...recipe,
-  // The look and the motion are random. Which projects appear is not.
+  // The look and the motion are random. The languages and the rings are not.
   accountType: 'organization',
   organizationScope: 'active',
   organizationView: 'projects',
-  nodeMode: 'repositories',
+  nodeMode: 'languages',
   maxRepos: 25,
   connectionDensity: 'balanced',
   organization: { contributors: { enabled: false }, grouping: { mode: 'auto', pattern: '' } },
@@ -46,6 +46,7 @@ const config = {
   snapToRings: true,
   identityRing: true,
   layout: 'atlas',
+  visualStyle: { ...recipe.visualStyle, labels: true, labelSize: Math.max(11, recipe.visualStyle.labelSize ?? 11) },
   history: { ...recipe.history, mode: 'current' },
   activityEffect: 'off',
   codingRhythm: false,
